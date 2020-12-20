@@ -4,7 +4,9 @@ const removeMedia = () => {
     media.forEach((mediaElement, index) => {
       mediaElement.style.visibility = 'hidden';
       if(index === media.length - 1) {
-        document.querySelector('#concealer').style.display = 'none';
+        if(document.querySelector('#concealer')) {
+          document.querySelector('#concealer').style.display = 'none';
+        }
       }
     });
   }

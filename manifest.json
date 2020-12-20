@@ -1,7 +1,7 @@
 {
-  "name": "Always on Image and Video Remover",
+  "name": "Image and Video Remover",
   "version": "1.0",
-  "description": "If the extension is turned on, you will find no images or videos on the pages you view.",
+  "description": "As long as the extension is turned on, you will find no images or videos on the pages you view.",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
