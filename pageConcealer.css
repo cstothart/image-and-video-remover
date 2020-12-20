@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
 #concealer {
   display: flex;
   align-items: center;
@@ -8,5 +10,9 @@
   background: #efefef;
   color: #333333;
   font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
   z-index: 9999;
+  width: 100%;
+  height: 100%;
 }
