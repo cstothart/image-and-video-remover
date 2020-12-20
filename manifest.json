@@ -1,7 +1,7 @@
 {
   "name": "Image and Video Remover",
-  "version": "1.0",
-  "description": "As long as the extension is turned on, you will find no images or videos on the pages you view.",
+  "version": "1.0.0",
+  "description": "As long as this extension is turned on, you will find no images or videos on the pages you view.",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
