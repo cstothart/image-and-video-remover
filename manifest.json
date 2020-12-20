@@ -1,7 +1,7 @@
 {
   "name": "Always on Image and Video Remover",
   "version": "1.0",
-  "description": "Turn on the extension and find no images or videos on any of the pages you open.",
+  "description": "If the extension is turned on, you will find no images or videos on the pages you view.",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -11,7 +11,8 @@
     },
     {
       "matches": ["<all_urls>"],
-      "js": ["removeMedia.js"]
+      "js": ["removeMedia.js"],
+      "all_frames": true
     }
   ],
   "manifest_version": 2
