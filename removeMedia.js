@@ -15,8 +15,8 @@ const removeMedia = () => {
 const removeBackgroundImages = () => {
   const elements = document.querySelectorAll('*');
   elements.forEach(element => {
-    element.style.backgroundImage = '';
-  })
+    element.style.removeProperty('background-image');
+  });
 }
 
 const observerCallback = mutations => {
@@ -24,7 +24,9 @@ const observerCallback = mutations => {
   removeBackgroundImages();
 }
 
+// For media found in iframes.
 removeMedia();
+removeBackgroundImages();
 
 const observerTarget = document.querySelector('body');
 const observerOptions = {childList: true, subtree: true, attributes: true};
