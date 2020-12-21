@@ -4,13 +4,13 @@
   "description": "You will find NO images or videos on the pages you view as long as this extension is activated.",
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["http://*/*", "https://*/*"],
       "run_at": "document_start",
       "css": ["pageConcealer.css"],
       "js": ["pageConcealer.js"]
     },
     {
-      "matches": ["<all_urls>"],
+      "matches": ["http://*/*", "https://*/*"],
       "js": ["removeMedia.js"],
       "all_frames": true
     }
